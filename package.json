@@ -8,8 +8,8 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build:dev": "cross-env NODE_ENV=development nest build",
-    "start:dev:db": "docker compose --env-file=./env/.development.env up -d mysql redis",
-    "stop:dev:db": "docker compose --env-file=./env/.development.env down mysql redis",
+    "start:dev:db": "docker compose --profile=local --env-file=./env/.development.env up -d mysql redis",
+    "stop:dev:db": "docker compose --profile=local --env-file=./env/.development.env down mysql redis",
     "start:dev": "cross-env NODE_ENV=development nest start --watch",
     "start:debug": "cross-env NODE_ENV=development nest start --debug --watch",
     "start:compose": "docker compose --profile=local --env-file=./env/.development.env up",
