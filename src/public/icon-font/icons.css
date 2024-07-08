@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'icons';
+  src: url('icons.woff?e88074b43e7187262b4981fbceb6e5a3') format('woff'),
+    url('icons.woff2?e88074b43e7187262b4981fbceb6e5a3') format('woff2');
+}
+
+i[class^='icon-']:before,
+i[class*=' icon-']:before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ion-logo-github:before {
+  content: '\f101';
+}
+.icon-logo-logo:before {
+  content: '\f102';
+}
+.icon-mat-assessment-bk:before {
+  content: '\f103';
+}
+.icon-mat-menu_book-bk:before {
+  content: '\f104';
+}
+.icon-mat-settings-bk:before {
+  content: '\f105';
+}
+.icon-mat-timer-bk:before {
+  content: '\f106';
+}
